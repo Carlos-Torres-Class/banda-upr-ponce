@@ -2,7 +2,7 @@ body {
         margin: 0;
     }
 
-    /* ===== HEADER WITH LOGOS ===== */
+  
     header {
         display: flex;
         align-items: center;
@@ -55,20 +55,20 @@ body {
         max-width: 400px;
     }
 
-    /* ===== LOGOS ===== */
+   
     .logo {
         width: 100px;
         margin-right: 30px;
         margin-left: 30px;
     }
 
-    /* ===== MAIN CONTENT ===== */
+   
     .main-section {
         position: relative;
         padding: 60px 0;
     }
 
-    /* RED BARS */
+   
     .side-bar {
         position: absolute;
         top: 50%;
@@ -86,7 +86,7 @@ body {
         right: 0;
     }
 
-    /* CONTENT FIXED HERE */
+   
     .content {
         display: flex;
         align-items: flex-start;
@@ -146,12 +146,12 @@ body {
 }
 @media (max-width: 768px) {
 
-    /* make container full width */
+   
     div[style] {
         width: 100% !important;
     }
 
-    /* stack main content */
+  
     .content {
         flex-direction: column;
         align-items: center;
@@ -159,7 +159,7 @@ body {
         padding: 20px;
     }
 
-    /* image responsive */
+  
     .main-img {
         width: 100%;
         max-width: 100%;
@@ -167,12 +167,12 @@ body {
         margin-top: 20px;
     }
 
-    /* title smaller */
+ 
     h3 {
         font-size: 45px;
     }
 
-    /* navbar buttons stack */
+    
     .nav-btn {
         display: block;
         width: 80%;
@@ -180,23 +180,23 @@ body {
         text-align: center;
     }
 
-    /* logos smaller */
+    
     .logo {
         width: 60px;
         margin: 10px;
     }
 
-    /* header text smaller */
+    
     header h1 {
         font-size: 28px;
     }
 
-    /* hide red side bars (important for mobile) */
+    
     .side-bar {
         display: none;
     }
 
-    /* footer stack */
+    
     .footer-content {
         flex-direction: column;
         text-align: center;
@@ -207,7 +207,7 @@ body {
         gap: 10px;
     }
 
-    /* black bar thinner */
+   
     .black-bar {
         height: 25px;
     }
