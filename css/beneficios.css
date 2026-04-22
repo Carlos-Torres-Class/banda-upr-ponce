@@ -6,7 +6,7 @@ body {
     margin: auto;
 }
 
-/* ===== HEADER ===== */
+
 header {
         display: flex;
         align-items: center;
@@ -28,7 +28,7 @@ header {
         margin-right: 30px;
         margin-left: 30px;
     }
-/* ===== NAV BUTTONS ===== */
+
 .nav-container {
     display: flex;
     justify-content: center;
@@ -53,14 +53,14 @@ header {
         margin: 0;
     }
 
-/* ===== BLACK BAR ===== */
+
 .black-bar {
     background-color: black;
     height: 40px;
     width: 100%;
 }
 
-/* ===== MAIN SECTION ===== */
+
 .main-section {
     position: relative;
     padding: 40px 0;
@@ -78,7 +78,6 @@ header {
 .side-bar.left { left: 0; }
 .side-bar.right { right: 0; }
 
-/* ===== CONTENT ===== */
 .content {
         display: flex;
         align-items: flex-start;
@@ -136,9 +135,7 @@ li {
     text-decoration: none;
 }
 
-/* =========================
-   📱 MOBILE RESPONSIVE
-========================= */
+
 @media (max-width: 768px) {
 
     .container {
