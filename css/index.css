@@ -3,14 +3,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* CONTAINER */
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
 
-/* ===== HEADER ===== */
+
 header {
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@ header h1 {
     margin: 0;
 }
 
-/* SUBTITLE */
+
 h2 {
     background-color: #000000;
     color: #ffffff;
@@ -40,13 +40,13 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* LOGOS */
+
 .logo {
     width: 90px;
     margin: 10px;
 }
 
-/* ===== NAVIGATION ===== */
+
 .nav-container {
     display: flex;
     justify-content: center;
@@ -67,13 +67,13 @@ h2 {
     background-color: #cc0000;
 }
 
-/* ===== MAIN SECTION ===== */
+
 .main-section {
     position: relative;
     padding: 40px 0;
 }
 
-/* RED BARS */
+
 .side-bar {
     position: absolute;
     top: 50%;
@@ -86,7 +86,7 @@ h2 {
 .side-bar.left { left: 0; }
 .side-bar.right { right: 0; }
 
-/* CONTENT */
+
 .content {
     display: flex;
     align-items: center;
@@ -97,7 +97,7 @@ h2 {
     text-align: center;
 }
 
-/* TITLE */
+
 h3 {
     font-size: 70px;
     margin: 0;
@@ -110,7 +110,7 @@ h3 {
     border-radius: 10px;
 }
 
-/* ===== FOOTER ===== */
+
 .footer-content {
     display: flex;
     gap: 20px;
@@ -134,7 +134,7 @@ h3 {
     text-decoration: none;
 }
 
-/* ===== MOBILE ===== */
+
 @media (max-width: 768px) {
 
     header h1 {
