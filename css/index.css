@@ -419,4 +419,15 @@ h3 {
         flex-direction: column;
         gap: 5px;
     }
+    .inscribir-nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .inscribir-nav-btn {
+        width: 80%;
+        text-align: center;
+    }
 }
