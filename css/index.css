@@ -16,8 +16,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    flex-wrap: wrap;
-    text-align: center;
 }
 
 header h1 {
@@ -25,19 +23,8 @@ header h1 {
     background-color: #ff0000;
     color: #000000;
     font-size: 40px;
-    padding: 10px;
-    margin: 0;
-}
-
-
-h2 {
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 24px;
-    padding: 8px;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 30px;
+    margin: 0;
 }
 
 
@@ -47,10 +34,27 @@ h2 {
 }
 
 
+h2 {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 70px;
+    margin: 0;
+}
+
+
 .nav-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;
     gap: 120px;
 }
 
@@ -68,7 +72,7 @@ h2 {
 }
 
 
-.main-section {
+.index-main-section {
     position: relative;
     padding: 40px 0;
 }
@@ -83,28 +87,26 @@ h2 {
     background-color: red;
 }
 
-.side-bar.left { left: 0; }
-.side-bar.right { right: 0; }
+.side-bar.left {
+    left: 0;
+}
+
+.side-bar.right {
+    right: 0;
+}
 
 
-.content {
+.index-main-content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap;
     padding: 20px;
     text-align: center;
 }
 
 
-h3 {
-    font-size: 70px;
-    margin: 0;
-}
-
-/* IMAGE */
-.main-img { 
+.main-img {
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
@@ -134,36 +136,272 @@ h3 {
     text-decoration: none;
 }
 
+.sobre-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sobre-main-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+
+.sobre-main-content .main-img {
+    width: 450px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.black-bar {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+}
+
+.sobre-text {
+    max-width: 500px;
+}
+
+.sobre-title {
+    background: none;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+}
+
+.beneficios-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 40px 20px;
+}
+
+.beneficios-text {
+    max-width: 500px;
+}
+
+.beneficios-title {
+    background: none;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.beneficios-text ul {
+    font-size: 24px;
+    line-height: 2;
+}
+
+.beneficios-text li {
+    margin-bottom: 10px;
+}
+
+.columnas {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 20px;
+}
+
+.columna {
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.columna h2 {
+    background: none;
+    color: #cc0000;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.columna li {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.requisitos-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 20px;
+}
+
+.requisitos-text {
+    max-width: 500px;
+}
+
+.requisitos-title {
+    background: none;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.requisitos-text ul {
+    font-size: 24px;
+    line-height: 2;
+    padding-left: 70px;
+}
+
+.requisitos-text li {
+    margin-bottom: 10px;
+}
+.galeria-title {
+    background: none;
+    color: #000000;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px 90px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 @media (max-width: 768px) {
 
+    .container {
+        width: 95%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
     header h1 {
-        font-size: 26px;
+        font-size: 28px;
+        width: 100%;
+        padding: 10px 0;
     }
 
     .logo {
-        width: 60px;
+        width: 70px;
     }
 
-    h2 {
-        font-size: 18px;
+    .black-bar {
+        height: 30px;
     }
 
-    h3 {
-        font-size: 40px;
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .nav-btn {
+        width: 80%;
+        text-align: center;
     }
 
     .side-bar {
         display: none;
     }
 
-    .nav-container {
+    .index-main-content,
+    .sobre-main-content,
+    .beneficios-main-content,
+    .requisitos-main-content {
         flex-direction: column;
-        align-items: center;
+        gap: 25px;
+        padding: 30px 10px;
     }
 
-    .nav-btn {
-        width: 80%;
+    h3 {
+        font-size: 42px;
+    }
+
+    .sobre-title,
+    .beneficios-title,
+    .requisitos-title,
+    .galeria-title {
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    .sobre-text,
+    .beneficios-text,
+    .requisitos-text {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .sobre-main-content p {
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    .beneficios-text ul,
+    .requisitos-text ul {
+        font-size: 20px;
+        line-height: 1.7;
+        padding-left: 25px;
+    }
+
+    .main-img,
+    .sobre-main-content .main-img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .columnas {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 30px 10px;
+    }
+
+    .columna {
+        width: 85%;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .galeria-grid img {
+        height: 220px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+    }
+
+    .social {
+        flex-direction: column;
+        gap: 5px;
     }
 }

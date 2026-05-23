@@ -1,5 +1,6 @@
 body {
         margin: 0;
+        font-family: Arial, sans-serif;
     }
 
   
@@ -10,14 +11,14 @@ body {
         padding: 10px;
     }
 
-    header h1 {
-        flex: 1;
-        text-align: center;
-        background-color: #ff0000;
-        color: #000000;
-        margin: 0;
-        font-size: 50px;
-    }
+   header h1 {
+    flex: 1;
+    background-color: #ff0000;
+    color: #000000;
+    font-size: 40px;
+    padding: 10px;
+    margin: 0;
+}
 
     h2{ 
         font-family: sans-serif;
@@ -25,17 +26,21 @@ body {
         font-size: 90px; 
         margin: 0;
     }
+    .nav-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 120px;
+}
 
     .nav-btn {
-        display: inline-block;
-        margin: 20px 55px;
-        padding: 10px 30px;
-        font-size: 18px;
-        background-color: #ff0000;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-    }
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
     .nav-btn:hover {
         background-color: #cc0000;
@@ -55,20 +60,20 @@ body {
         max-width: 400px;
     }
 
-   
+    
     .logo {
         width: 100px;
         margin-right: 30px;
         margin-left: 30px;
     }
 
-   
+  
     .main-section {
         position: relative;
         padding: 60px 0;
     }
 
-   
+
     .side-bar {
         position: absolute;
         top: 50%;
@@ -86,7 +91,7 @@ body {
         right: 0;
     }
 
-   
+    
     .content {
         display: flex;
         align-items: flex-start;
@@ -146,12 +151,12 @@ body {
 }
 @media (max-width: 768px) {
 
-   
+    /* make container full width */
     div[style] {
         width: 100% !important;
     }
 
-  
+   
     .content {
         flex-direction: column;
         align-items: center;
@@ -159,7 +164,7 @@ body {
         padding: 20px;
     }
 
-  
+   
     .main-img {
         width: 100%;
         max-width: 100%;
@@ -167,12 +172,12 @@ body {
         margin-top: 20px;
     }
 
- 
+    
     h3 {
         font-size: 45px;
     }
 
-    
+   
     .nav-btn {
         display: block;
         width: 80%;
@@ -180,23 +185,21 @@ body {
         text-align: center;
     }
 
-    
+  
     .logo {
         width: 60px;
         margin: 10px;
     }
 
-    
     header h1 {
         font-size: 28px;
     }
 
-    
     .side-bar {
         display: none;
     }
 
-    
+    /* footer stack */
     .footer-content {
         flex-direction: column;
         text-align: center;
@@ -207,7 +210,7 @@ body {
         gap: 10px;
     }
 
-   
+    /* black bar thinner */
     .black-bar {
         height: 25px;
     }
