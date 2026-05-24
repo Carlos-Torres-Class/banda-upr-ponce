@@ -1,10 +1,26 @@
+:root {
+    --main-red: #ff0000;
+    --dark-red: #cc0000;
+    --black: #000000;
+    --white: #ffffff;
+    --gray-bg: #d9d9d9;
+    --light-gray: #f5f5f5;
+
+    --main-font: Arial, sans-serif;
+
+    --main-radius: 10px;
+    --main-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--main-font);
+    background-color: var(--gray-bg);
 }
 
 
 .container {
+    background-color: var(--white);
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -20,8 +36,8 @@ header {
 
 header h1 {
     flex: 1;
-    background-color: #ff0000;
-    color: #000000;
+    background-color: var(--main-red);
+    color: var(--black);
     font-size: 40px;
     text-align: center;
     margin: 0;
@@ -35,8 +51,8 @@ header h1 {
 
 
 h2 {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--black);
+    color: var(--white);
     font-size: 24px;
     padding: 8px;
     text-align: center;
@@ -45,8 +61,9 @@ h2 {
 }
 
 h3 {
-    font-size: 70px;
+    font-size: 65px;
     margin: 0;
+    line-height: 1.1;
 }
 
 
@@ -54,20 +71,24 @@ h3 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    gap: 120px;
+    gap: 70px;
 }
 
 .nav-btn {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #ff0000;
-    color: white;
+    background-color: var(--main-red);
+    color: var(--white);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: var(--main-radius);
+    border: 2px solid var(--black);
+    transition: 0.3s;
+    box-shadow: var(--main-shadow);
 }
 
 .nav-btn:hover {
-    background-color: #cc0000;
+    background-color: var(--dark-red);
+    transform: scale(1.05);
 }
 
 
@@ -83,7 +104,7 @@ h3 {
     transform: translateY(-50%);
     width: 60px;
     height: 200px;
-    background-color: red;
+    background-color: var(--main-red);
 }
 
 .side-bar.left {
@@ -99,7 +120,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
     padding: 20px;
     text-align: center;
 }
@@ -108,17 +129,19 @@ h3 {
 .main-img {
     width: 100%;
     max-width: 500px;
-    border-radius: 10px;
+    border-radius: var(--main-radius);
+    border: 2px solid var(--main-red);
+    box-shadow: var(--main-shadow);
 }
 
 
 .footer-content {
     display: flex;
     gap: 20px;
-    padding: 20px;
 }
 
 .rogelio {
+    padding-left: 70px;
     width: 80px;
 }
 
@@ -129,8 +152,13 @@ h3 {
 }
 
 .social a {
-    color: black;
+    color: var(--black);
     text-decoration: none;
+}
+
+.social i {
+
+    font-size: 20px;
 }
 
 .sobre-main-content {
@@ -150,11 +178,12 @@ h3 {
 .sobre-main-content .main-img {
     width: 450px;
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: var(--main-radius);
+    border: 2px solid var(--main-red);
 }
 
 .black-bar {
-    background-color: black;
+    background-color: var(--black);
     height: 40px;
     width: 100%;
 }
@@ -165,7 +194,7 @@ h3 {
 
 .sobre-title {
     background: none;
-    color: #000000;
+    color: var(--black);
     font-size: 40px;
     text-align: center;
 }
@@ -184,7 +213,7 @@ h3 {
 
 .beneficios-title {
     background: none;
-    color: #000000;
+    color: var(--black);
     font-size: 40px;
     text-align: center;
     margin-bottom: 25px;
@@ -207,16 +236,17 @@ h3 {
 }
 
 .columna {
-    background-color: #f5f5f5;
+    background-color: var(--light-gray);
     padding: 25px;
-    border-radius: 10px;
+    border-radius: var(--main-radius);
     width: 250px;
     text-align: center;
+    box-shadow: var(--main-shadow);
 }
 
 .columna h2 {
     background: none;
-    color: #cc0000;
+    color: var(--dark-red);
     margin-bottom: 20px;
     font-size: 32px;
 }
@@ -237,7 +267,7 @@ h3 {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 40px 20px;
+    padding: 20px;
 }
 
 .requisitos-text {
@@ -246,7 +276,7 @@ h3 {
 
 .requisitos-title {
     background: none;
-    color: #000000;
+    color: var(--black);
     font-size: 40px;
     text-align: center;
     margin-bottom: 25px;
@@ -261,9 +291,10 @@ h3 {
 .requisitos-text li {
     margin-bottom: 10px;
 }
+
 .galeria-title {
     background: none;
-    color: #000000;
+    color: var(--black);
     font-size: 45px;
     text-align: center;
     margin-bottom: 20px;
@@ -280,26 +311,112 @@ h3 {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: var(--main-radius);
+    border: 2px solid var(--main-red);
+    transition: 0.3s;
 }
-.inscribirse{
+
+.galeria-grid img:hover {
+    transform: scale(1.05);
+}
+
+.inscribirse {
+    padding-top: 30px;
     margin-left: auto;
+    margin-right: 110px;
 }
+
 .inscribir-nav-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    gap: 100px;
+    gap: 70px;
 }
+
 .inscribir-nav-btn {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #ff0000;
-    color: white;
+    background-color: var(--main-red);
+    color: var(--white);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: var(--main-radius);
+    border: 2px solid var(--black);
+    transition: 0.3s;
+    box-shadow: var(--main-shadow);
 }
 
+.inscribir-nav-btn:hover {
+    background-color: var(--dark-red);
+    transform: scale(1.05);
+}
+
+.inscribir-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 60px 80px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+    margin-top: 5px;
+    padding: 30px;
+}
+
+.formulario input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: var(--main-radius);
+    border: 1px solid #ccc;
+    box-shadow: var(--main-shadow);
+}
+
+.formulario label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.inscribir-parrafo {
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 450px;
+}
+
+.video-title {
+    background: none;
+    color: var(--black);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: var(--main-radius);
+    border: var(--main-border);
+    box-shadow: var(--main-shadow);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
 
 @media (max-width: 768px) {
 
@@ -333,8 +450,9 @@ h3 {
         margin-top: 20px;
     }
 
+    
     .nav-btn {
-        width: 80%;
+        width: 90%;
         text-align: center;
     }
 
@@ -345,7 +463,8 @@ h3 {
     .index-main-content,
     .sobre-main-content,
     .beneficios-main-content,
-    .requisitos-main-content {
+    .requisitos-main-content,
+    .inscribir-main-content {
         flex-direction: column;
         gap: 25px;
         padding: 30px 10px;
@@ -377,9 +496,12 @@ h3 {
 
     .beneficios-text ul,
     .requisitos-text ul {
+        list-style: none;
         font-size: 20px;
         line-height: 1.7;
-        padding-left: 25px;
+        list-style-position: inside;
+        padding-left: 0px;
+        text-align: center;
     }
 
     .main-img,
@@ -419,6 +541,7 @@ h3 {
         flex-direction: column;
         gap: 5px;
     }
+
     .inscribir-nav-container {
         flex-direction: column;
         align-items: center;
@@ -430,4 +553,27 @@ h3 {
         width: 80%;
         text-align: center;
     }
+
+    .formulario {
+        width: 100%;
+        max-width: 320px;
+        padding: 20px;
+    }
+
+    .inscribir-parrafo {
+        margin: auto;
+    }
+
+    .rogelio {
+        padding-left: 0px;
+    }
+    .inscribirse {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.formulario button{
+    width: 100%;
+}
 }

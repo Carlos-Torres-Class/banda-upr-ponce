@@ -11,6 +11,7 @@
 
 
     <title>Banda UPR Ponce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -41,23 +42,41 @@
                 <div class="side-bar left"></div>
                 <div class="side-bar right"></div>
 
-                <div class="requisitos-main-content">
+                <div class="inscribir-main-content">
 
                     <div class="requisitos-text">
+                        <h2 class="requisitos-title">Formulario</h2>
 
-                        <h2 class="requisitos-title">Si desea inscribirse puede:</h2>
 
-                        <ul>
-                            <li>Escanear el codigo QR y llenar el formulario</li>
-                            <li>Comunicarse atravez de las redes sociales</li>
-                            <li>Enviar un mensaje a <a href="mailto:bandauprponce@upr.edu">
-                                bandauprponce@upr.edu
-                            </a> </li>
-                        </ul>
+                        <p class="inscribir-parrafo">
+
+                            La Banda UPR Ponce siempre está en búsqueda de nuevos talentos
+                            interesados en desarrollar sus habilidades musicales y formar
+                            parte de nuestra familia universitaria. Si desea recibir más
+                            información sobre audiciones o cualquier otro detalle,
+                            complete el siguiente formulario y nos estaremos comunicando
+                            con usted lo antes posible.
+
+                        </p>
 
                     </div>
 
-                    <img src="images/audiciones.jpg" class="main-img" alt="Foto de la banda">
+                    <form class="formulario" onsubmit="return validarFormulario()">
+
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre">
+
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email">
+
+                        <label for="instrumento">Instrumento:</label>
+                        <input type="text" id="instrumento">
+
+                        <button type="submit" class="nav-btn">
+                            Enviar
+                        </button>
+
+                    </form>
 
                 </div>
             </div>
@@ -70,13 +89,30 @@
                 <img src="images/rogelio.png" class="rogelio" alt="foto de rogelio">
 
                 <div class="social">
-                    <p>Instagram: <a href="https://www.instagram.com/banda_uprponce/">banda_uprponce</a></p>
-                    <p>Facebook: <a href="https://www.facebook.com/BandaUPRPonce">BandaUPRPonce</a></p>
+
+                    <p>
+                        <i class="fa-brands fa-instagram"></i>
+
+                        <a href="https://www.instagram.com/banda_uprponce/">
+                            banda_uprponce
+                        </a>
+                    </p>
+
+                    <p>
+                        <i class="fa-brands fa-facebook"></i>
+
+                        <a href="https://www.facebook.com/BandaUPRPonce">
+                            BandaUPRPonce
+                        </a>
+                    </p>
+
                 </div>
             </div>
+            <p class="copyright"> © 2026 Banda UPR Ponce | Universidad de Puerto Rico Recinto de Ponce </p>
         </footer>
 
     </div>
+    <script src="js/script.js"></script>
 
 </body>
 
