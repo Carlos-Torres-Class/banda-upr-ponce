@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!--Conectar css-->
     <link rel="stylesheet" href="css/index.css">
 
 
 
-
+<!--Titulo de la pagina-->
     <title>Banda UPR Ponce</title>
+
+<!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
     <div class="container">
-
+<!--Encabezado-->
         <header>
             <img src="images/Siglas-UPR-Ponce-black.png" class="logo" alt="siglas upr ponce">
             <h1>Banda UPR Ponce</h1>
             <img src="images/ponce-sello.png" class="logo" alt="sello de la upr">
         </header>
-
+<!--barra negra-->
         <div class="black-bar"></div>
 
-
+<!--Barra de navegación-->
         <div class="inscribir-nav-container">
             <a href="index.html" class="inscribir-nav-btn">Inicio</a>
             <a href="sobre.html" class="inscribir-nav-btn">Sobre Nosotros</a>
@@ -35,19 +37,20 @@
             <a href="Requisitos.html" class="inscribir-nav-btn">Requisitos</a>
             <a href="Galeria.html" class="inscribir-nav-btn">Galeria</a>
         </div>
-
+<!--Contenido principal-->
         <main>
             <div class="index-main-section">
-
+<!--Cuadrados rojos a los lados-->
                 <div class="side-bar left"></div>
                 <div class="side-bar right"></div>
 
                 <div class="inscribir-main-content">
 
                     <div class="requisitos-text">
+                        <!--Titulo Formulario-->
                         <h2 class="requisitos-title">Formulario</h2>
 
-
+<!--Parrafo-->
                         <p class="inscribir-parrafo">
 
                             La Banda UPR Ponce siempre está en búsqueda de nuevos talentos
@@ -61,8 +64,9 @@
 
                     </div>
 
+                    <!--Formulario-->
                     <form class="formulario" onsubmit="return validarFormulario()">
-
+                        
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre">
 
@@ -72,6 +76,7 @@
                         <label for="instrumento">Instrumento:</label>
                         <input type="text" id="instrumento">
 
+                        <!--Boton de enviar formulario-->
                         <button type="submit" class="nav-btn">
                             Enviar
                         </button>
@@ -81,7 +86,7 @@
                 </div>
             </div>
         </main>
-
+        <!-- Footer con redes sociales e informacion de contacto -->
         <footer>
             <hr>
 
@@ -126,6 +131,7 @@
         </footer>
 
     </div>
+    <!--conectar js-->
     <script src="js/script.js"></script>
 
 </body>

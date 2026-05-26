@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,10 @@
 
 
 
-
+    <!-- Título de la página -->
     <title>Banda UPR Ponce</title>
+
+    <!--Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -18,15 +20,16 @@
 
     <div class="container">
 
+        <!-- Encabezado -->
         <header>
             <img src="images/Siglas-UPR-Ponce-black.png" class="logo" alt="siglas upr ponce">
             <h1>Banda UPR Ponce</h1>
             <img src="images/ponce-sello.png" class="logo" alt="sello de la upr">
         </header>
-
+        <!--Barra negra-->
         <div class="black-bar"></div>
 
-
+        <!--Barra de navegación -->
         <div class="nav-container">
             <a href="index.html" class="nav-btn">Inicio</a>
             <a href="sobre.html" class="nav-btn">Sobre Nosotros</a>
@@ -35,36 +38,185 @@
             <a href="Requisitos.html" class="nav-btn">Requisitos</a>
         </div>
 
+        <!-- Contenido principal -->
         <main>
             <div class="index-main-section">
 
 
-
+                <!-- Título de galería -->
                 <h2 class="galeria-title">Galería</h2>
 
+                <!-- Galería de imágenes -->
                 <div class="galeria-grid">
-                    <img src="images/galeria1.jpg" alt="Banda en la Justas LAI">
-                    <img src="images/galeria2.jpg" alt="Foto de la banda frente al parque e bombas">
-                    <img src="images/galeria3.jpg" alt="Banda en taller de percusion">
-                    <img src="images/galeria4.jpg" alt="Actividad del carnaval de Ponce">
-                    <img src="images/galeria5.jpg" alt="Actividad del carnaval de Ponce">
-                    <img src="images/galeria6.jpg" alt="FActividad del carnaval de la playa de Ponce">
-                    <img src="images/galeria7.jpg" alt="Foto de la banda">
-                    <img src="images/galeria8.jpg" alt="Foto de la banda">
-                    <img src="images/galeria9.jpg" alt="Foto de la banda">
-                    <img src="images/galeria10.jpg" alt="Seccion de metales">
-                    <img src="images/galeria11.jpg" alt="Seccion de flautas">
-                    <img src="images/galeria12.jpg" alt="Foto grupal de la banda">
-                    <img src="images/galeria13.jpg" alt="Trompetista en las Justas LAI">
-                    <img src="images/galeria14.jpg" alt="Percucionista en las Justas LAI">
-                    <img src="images/galeria15.jpg" alt="Foto de la banda">
-                    <img src="images/galeria16.jpg" alt="Foto de la banda graduacion 2022">
-                    <img src="images/galeria17.jpg" alt="Foto de la banda Justas LAI 2022">
-                    <img src="images/galeria18.jpg" alt="Foto de la banda junto los atletas de la LAI">
+
+                    <img src="images/galeria1.jpg" onclick="openModal();currentSlide(1)"
+                        class="galeria-img hover-shadow" alt="Banda en las Justas LAI">
+
+                    <img src="images/galeria2.jpg" onclick="openModal();currentSlide(2)"
+                        class="galeria-img hover-shadow" alt="Banda frente al Parque de Bombas">
+
+                    <img src="images/galeria3.jpg" onclick="openModal();currentSlide(3)"
+                        class="galeria-img hover-shadow" alt="Banda en taller de percusión">
+
+                    <img src="images/galeria4.jpg" onclick="openModal();currentSlide(4)"
+                        class="galeria-img hover-shadow" alt="Actividad del carnaval de Ponce">
+
+                    <img src="images/galeria5.jpg" onclick="openModal();currentSlide(5)"
+                        class="galeria-img hover-shadow" alt="Actividad del carnaval de Ponce">
+
+                    <img src="images/galeria6.jpg" onclick="openModal();currentSlide(6)"
+                        class="galeria-img hover-shadow" alt="Actividad del carnaval de la playa de Ponce">
+
+                    <img src="images/galeria7.jpg" onclick="openModal();currentSlide(7)"
+                        class="galeria-img hover-shadow" alt="Foto de la banda">
+
+                    <img src="images/galeria8.jpg" onclick="openModal();currentSlide(8)"
+                        class="galeria-img hover-shadow" alt="Foto de la banda">
+
+                    <img src="images/galeria9.jpg" onclick="openModal();currentSlide(9)"
+                        class="galeria-img hover-shadow" alt="Foto de la banda">
+
+                    <img src="images/galeria10.jpg" onclick="openModal();currentSlide(10)"
+                        class="galeria-img hover-shadow" alt="Sección de metales">
+
+                    <img src="images/galeria11.jpg" onclick="openModal();currentSlide(11)"
+                        class="galeria-img hover-shadow" alt="Sección de flautas">
+
+                    <img src="images/galeria12.jpg" onclick="openModal();currentSlide(12)"
+                        class="galeria-img hover-shadow" alt="Foto grupal de la banda">
+
+                    <img src="images/galeria13.jpg" onclick="openModal();currentSlide(13)"
+                        class="galeria-img hover-shadow" alt="Trompetista en las Justas LAI">
+
+                    <img src="images/galeria14.jpg" onclick="openModal();currentSlide(14)"
+                        class="galeria-img hover-shadow" alt="Percusionista en las Justas LAI">
+
+                    <img src="images/galeria15.jpg" onclick="openModal();currentSlide(15)"
+                        class="galeria-img hover-shadow" alt="Foto de la banda">
+
+                    <img src="images/galeria16.jpg" onclick="openModal();currentSlide(16)"
+                        class="galeria-img hover-shadow" alt="Graduación 2022 de la banda">
+
+                    <img src="images/galeria17.jpg" onclick="openModal();currentSlide(17)"
+                        class="galeria-img hover-shadow" alt="Banda en las Justas LAI 2022">
+
+                    <img src="images/galeria18.jpg" onclick="openModal();currentSlide(18)"
+                        class="galeria-img hover-shadow" alt="Banda junto a atletas de la LAI">
 
                 </div>
+
+                <!-- Modal Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 18</div>
+                            <img src="images/galeria1.jpg" alt="Banda en las Justas LAI">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 18</div>
+                            <img src="images/galeria2.jpg" alt="Banda frente al Parque de Bombas">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 18</div>
+                            <img src="images/galeria3.jpg" alt="Banda frente al Parque de Bombas">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 18</div>
+                            <img src="images/galeria4.jpg" alt="Banda frente al Parque de Bombas">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 18</div>
+                            <img src="images/galeria5.jpg" alt="Banda frente al Parque de Bombas">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 18</div>
+                            <img src="images/galeria6.jpg" alt="Banda frente al Parque de Bombas">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">7 / 18</div>
+                            <img src="images/galeria7.jpg" alt="Banda frente al Parque de Bombas">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">8 / 18</div>
+                            <img src="images/galeria8.jpg" alt="Banda frente al Parque de Bombas">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">9 / 18</div>
+                            <img src="images/galeria9.jpg" alt="Banda frente al Parque de Bombas">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">10 / 18</div>
+                            <img src="images/galeria10.jpg" alt="Banda frente al Parque de Bombas">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">11 / 18</div>
+                            <img src="images/galeria11.jpg" alt="Banda frente al Parque de Bombas">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">12 / 18</div>
+                            <img src="images/galeria12.jpg" alt="Foto grupal de la banda">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">13 / 18</div>
+                            <img src="images/galeria13.jpg" alt="Trompetista en las Justas LAI">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">14 / 18</div>
+                            <img src="images/galeria14.jpg" alt="Percusionista en las Justas LAI">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">15 / 18</div>
+                            <img src="images/galeria15.jpg" alt="Foto de la banda">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">16 / 18</div>
+                            <img src="images/galeria16.jpg" alt="Graduación 2022 de la banda">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">17 / 18</div>
+                            <img src="images/galeria17.jpg" alt="Banda en las Justas LAI 2022">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">18 / 18</div>
+                            <img src="images/galeria18.jpg" alt="Banda junto a atletas de la LAI">
+                        </div>
+
+
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Título de videos -->
                 <h2 class="video-title">Video de la Banda</h2>
 
+                <!-- Contenedor de videos -->
                 <div class="video-container">
 
                     <video controls>
@@ -85,6 +237,7 @@
             </div>
         </main>
 
+        <!-- Footer con redes sociales e informacion de contacto -->
         <footer>
             <hr>
 
@@ -124,15 +277,18 @@
                     </p>
 
                 </div>
+
+                <!--Boton de formulario-->
                 <div class="inscribirse">
-                    <a href="Inscribir.html" class="nav-btn">Inscribirse</a>
+                    <a href="Inscribir.html" class="nav-btn">Mas Información</a>
                 </div>
             </div>
             <p class="copyright"> © 2026 Banda UPR Ponce | Universidad de Puerto Rico Recinto de Ponce </p>
         </footer>
 
     </div>
-
+    <!--Conectar js-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
